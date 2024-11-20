@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desculpas</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #conteudo {
+            text-align: center;
+            background-color: #ccc;
+            padding: 20px;
+            width: 400px;     
+            font-family: sans-serif;
+        }
+
+        .btn {
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteudo">
+        <h2>Você me desculpa pela minha atitude de hoje?</h2>
+        <div class="button-container">
+            <button class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="nao()">Não</button>
+        </div>
+    </div>
+
+    <script>
+        function sim() {
+            alert("Fez a escolha certa ♥! :)");
+            location.href = "https://www.youtube.com/watch?v=UfUFCzI5JBQ&ab_channel=LuanSantana";
+        }
+
+        function nao() {
+            alert("Mesmo escolhendo 'Não', espero que me perdoe ♥! :)");
+            location.href = "https://www.youtube.com/watch?v=oPxWbW9cc8k&ab_channel=MateusFreire";
+        }
+    </script>
+</body>
+</html>
